@@ -1,0 +1,68 @@
+section.Gallerie {
+    height: 400px;
+    background-image: url('../upload/Wallpaper1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+        #carousel {
+            width: 600px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        #carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+        
+        #carousel img.active {
+            display: block;
+        }
+        
+        #thumbnail-container {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #f2f2f2;
+        }
+        
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .thumbnail.active {
+            border-color: blue;
+        }
+        
+        #prev-btn,
+        #next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        #prev-btn {
+            left: 10px;
+        }
+        
+        #next-btn {
+            right: 10px;
+        }

@@ -1,0 +1,81 @@
+section.home {
+  height: 400px;
+  background-image: url('../upload/Wallpaper1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.carousel {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 500px;
+  height: 300px;
+  display: none;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section.comment {
+  height: 400px;
+  background-image: url('../upload/Wallpaper2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 5px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer img {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 0px;
+  float: right;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
