@@ -1,5 +1,5 @@
 section.home {
-  height: 400px;
+  height: 100vh;
   background-image: url('../upload/Wallpaper1.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,6 +32,7 @@ p {
   height: 300px;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .slide {
@@ -53,12 +54,69 @@ p {
 
 
 section.comment {
-  height: 400px;
+
   background-image: url('../upload/Wallpaper2.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+ 
 }
+
+
+
+.line-comment {
+  padding-top: 50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.card-comment{
+  /* border: 1px gray solid; */
+
+ width: 20%;
+ height: 100px;
+ background-color: #edda6a;
+ opacity: 0.7;
+
+}
+
+.line-comment .card-comment:nth-child(even)
+{
+  margin: 150px 20% 0 10% ;
+  border: red 2px solid;
+
+
+}
+
+.line-comment .card-comment:nth-child(odd)
+{
+  margin: 0 10% 150px 20%;
+
+
+}
+
+
+.form-group {
+ 
+  height: 100px;
+  background-color: #ccc;
+  opacity: 0.7;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
   background-color: #000000;

@@ -19,5 +19,5 @@ const CONFIG=[
 
 ];
 
-const BASE_PATH='/crud-master2/';
+const BASE_PATH='/StarIslandMain-master/';
 
