@@ -7,7 +7,7 @@ const CONFIG=[
     'db'=>[
         'HOST'=>'localhost',
         'PORT'=>'3306',
-        'NAME'=>'crud',
+        'NAME'=>'star_island',
         'USER'=>'root',
         'PWD'=>''
 

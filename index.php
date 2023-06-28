@@ -12,7 +12,7 @@ if (isset($_GET['a']) && $_GET['a'] == 'dis') {
 ?>
 
 <section class="home">
-    <h1 class="text-center mb-5">BIENVENUE SUR<br>STAR'ISLAND</h1>
+    <h1 class="text-center pt-5 mb-5">BIENVENUE SUR<br>STAR'ISLAND</h1>
     <div class="carousel row justify-content-center">
         <div class="slide col-6">
             <div class="container ">
@@ -67,7 +67,18 @@ if (isset($_GET['a']) && $_GET['a'] == 'dis') {
         </div>
 
         <div class="slide">
+
             <!-- Contenu de la troisième diapositive -->
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">TOP SERVEUR</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter Your Comment">
+                    <small id="emailHelp" class="form-text text-muted">Vaut commentaire sont sujets a
+                        Modérations avant Publication</small>
+                </div>
+            </form>
+
         </div>
     </div>
     <!-- <div class="d-flex justify-content-center">
@@ -76,14 +87,11 @@ if (isset($_GET['a']) && $_GET['a'] == 'dis') {
   </div> -->
 
     <div class="d-flex justify-content-center">
-        <a href="#" id="previous-slide" class="text-white bg-primary bg-opacity-75 rounded p-3 me-2"><</a>
+        <a href="#" id="previous-slide" class="text-white bg-primary bg-opacity-75 rounded p-3 me-2">
+            <</a>
                 <a href="#" id="next-slide" class="text-white bg-primary bg-opacity-75  rounded p-3">></a>
     </div>
 
-    </div>
-
-    <div class="text-center">
-        <img src="assets/upload/logo_discord.png" alt="" width=70>
     </div>
 
 
@@ -101,47 +109,54 @@ if (isset($_GET['a']) && $_GET['a'] == 'dis') {
         <div class="line-comment">
 
 
-            <div class="card-comment">
-                <img src="assets/upload/Avatar1.jfif" alt="Ma photo">
+            <div class="card-comment rounded-pill">
+                <img src="assets/upload/Avatar1.jfif" alt="Avatar1">
                 <p> commentaire sur la photo</p>
             </div>
 
 
-            <div class="card-comment">
-                <img src="assets/upload/Avatar1.jfif" alt="Ma photo">
+            <div class="card-comment rounded-pill">
+                <img src="assets/upload/Avatar2.png" alt="Avatar2">
                 <p> commentaire sur la photo</p>
             </div>
 
 
-            <div class="card-comment">
-                <img src="assets/upload/Avatar1.jfif" alt="Ma photo">
+            <div class="card-comment rounded-pill">
+                <img src="assets/upload/Avatar3.png" alt="Avatar3">
                 <p> commentaire sur la photo</p>
             </div>
 
 
-            <div class="card-comment">
-                <img src="assets/upload/Avatar1.jfif" alt="Ma photo">
+            <div class="card-comment rounded-pill">
+                <img src="assets/upload/Avatar4.jfif" alt="Avatar4">
                 <p> commentaire sur la photo</p>
             </div>
         </div>
     </div>
 
+    <br>
+    <br>
+    <br>
 
-    <div class="d-flex justify-content-center border">
+    <div class="d-flex justify-content-center w-50 mx-auto border">
         <form>
+
             <div class="form-group">
                 <label for="rating">Note :</label>
                 <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5">
-                    <label for="star5" title="5 étoiles"></label>
-                    <input type="radio" id="star4" name="rating" value="4">
-                    <label for="star4" title="4 étoiles"></label>
-                    <input type="radio" id="star3" name="rating" value="3">
-                    <label for="star3" title="3 étoiles"></label>
-                    <input type="radio" id="star2" name="rating" value="2">
-                    <label for="star2" title="2 étoiles"></label>
-                    <input type="radio" id="star1" name="rating" value="1">
-                    <label for="star1" title="1 étoile"></label>
+
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+
+                    <i class="fas fa-star"></i>
+                    <input type="hidden" name="rating" id="rating" value="">
+
+
                 </div>
             </div>
 
@@ -154,7 +169,40 @@ if (isset($_GET['a']) && $_GET['a'] == 'dis') {
         </form>
     </div>
 
+    <br>
+    <br>
+    <br>
 
 </section>
+
+
+<script>
+let notation = document.getElementById('rating');
+console.log(notation);
+
+
+let etoiles = document.getElementsByClassName('fa-star');
+
+
+
+for (let i = 0; i < etoiles.length; i++) {
+
+
+    etoiles[i].addEventListener('click', function() {
+        notation.value = i + 1;
+        for (let a = 0; a <= i; a++) {
+            console.log('coucou');
+            etoiles[a].style.color = 'yellow';
+
+        }
+        for (let b = i; i <= etoiles.length; b++) {
+            console.log('coucou');
+            etoiles[b + 1].style.color = 'grey';
+        }
+    })
+}
+</script>
+
+
 
 <?php require_once 'inc/footer.inc.php';          ?>

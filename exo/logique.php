@@ -1,6 +1,46 @@
 <?php require_once '../inc/header.inc.php';
 
 
+// if (isset($_GET['id']) && isset($_GET['a']) && $_GET['a']=='del') {
+//  $success= execute("DELETE FROM media_type WHERE id_media_type=:id", array(
+//      ':id'=>$_GET['id']
+//   ));
+
+//   if ($success) {
+
+//     $_SESSION['messages']['success'][]='supprimé!!!';
+//     header('location:./media_type.php');
+//     exit; 
+//   }
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /// problématique 1: je veux récupérer les informations d'une table en BDD
 ///  On est donc une requête de selection.
 /// ma requete SQL : "SELECT * FROM la_table"

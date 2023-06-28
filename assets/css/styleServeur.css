@@ -1,0 +1,22 @@
+section.Serveur {
+        
+    height: 100vh;
+    background-image: url('../upload/EkipBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        width: 800px; /* Exemple de largeur souhaitée */
+        margin: 0 auto; /* Pour centrer horizontalement la navbar dans la div container */
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }

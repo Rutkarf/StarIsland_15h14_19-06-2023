@@ -8,7 +8,7 @@
       </div>
       <div class="col-lg-6">
         <div class="text-right">
-          <img src="assets/upload/GTA-V-Logo.png" alt="Logo 1">
+          <img src="assets/upload/GTAVLogoFooter.png" alt="Logo 1">
           <img src="assets/upload/PEGI18.png" alt="Logo 2">
         </div>
       </div>
