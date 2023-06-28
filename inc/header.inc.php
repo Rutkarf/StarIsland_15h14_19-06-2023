@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/fontawesome-free/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/fontawesome-free/css/all.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/lux/bootstrap.min.css" integrity="sha512-+TCHrZDlJaieLxYGAxpR5QgMae/jFXNkrc6sxxYsIVuo/28nknKtf9Qv+J2PqqPXj0vtZo9AKW/SMWXe8i/o6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="<?= BASE_PATH; ?>">
-                    <img src="assets/upload/starisland.png" alt="Logo Star'Island" width=150>
+                    <img src="assets/upload/starislandNOBG.png" alt="Logo Star'Island" width=150>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,13 +29,13 @@
                             </a>
                         </li>
                         <li class="nav-item my-auto">
-                            <a class="nav-link" href="../front/Gallerie.php">Gallerie</a>
+                            <a class="nav-link" href="Gallerie.php">Gallerie</a>
                         </li>
                         <li class="nav-item  my-auto">
-                            <a class="nav-link" href="../front/DevenirVIP.php">Devenir VIP</a>
+                            <a class="nav-link" href="DevenirVIP.php">Devenir VIP</a>
                         </li>
                         <li class="nav-item  my-auto">
-                            <a class="nav-link" href="../front/Serveur.php">Serveur</a>
+                            <a class="nav-link" href="Serveur.php">Serveur</a>
                         </li>
 
                         <?php if (admin()) :           ?>
@@ -54,8 +54,8 @@
                     </ul>
 
                     <div class="navbar-nav d-flex flex-column me-auto">
-                        <a class="nav-link" href="<?= BASE_PATH . '../front/tuto.php'; ?>"><img src="<?= BASE_PATH . 'assets/upload/Boutton-Tutoriels.png' ?>" alt="" width="27" class="me-2">Tutoriel</a>
-                        <a class="nav-link" href="<?= BASE_PATH . '/front/event.php'; ?>"><img src="<?= BASE_PATH . 'assets/upload/Boutton-Event.png' ?>" alt="" width="27" class="me-2">Evènements</a>
+                        <a class="nav-link" href="<?= BASE_PATH . 'tuto.php'; ?>"><img src="<?= BASE_PATH . 'assets/upload/LogoTuto.png' ?>" alt="" width="27" class="me-2">Tutoriel</a>
+                        <a class="nav-link" href="<?= BASE_PATH . 'event.php'; ?>"><img src="<?= BASE_PATH . 'assets/upload/LogoEvent.png' ?>" alt="" width="27" class="me-2">Evènements</a>
                     </div>
 
                     <?php if (connect()) :           ?>
